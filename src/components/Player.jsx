@@ -27,7 +27,8 @@ export default function Player({
     <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-3xl p-8 shadow-2xl border border-gray-700">
       
       {/* Album Art */}
-      <div className="flex justify-center mb-8 relative">
+      {/* [BUG - SPACING]: Added -m-16 negative margin causing content overlap. [FIX]: Remove -m-16 */}
+      <div className="flex justify-center mb-8 relative -m-16">
         <div className={`w-80 h-80 bg-gradient-to-br ${podcast?.bgColor} rounded-2xl shadow-2xl flex items-center justify-center relative overflow-hidden`}>
           <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
             <span className="text-[120px]">{podcast?.image}</span>
@@ -36,7 +37,8 @@ export default function Player({
             <div className="absolute inset-0 animate-pulse bg-gradient-to-t from-black/40 to-transparent"></div>
           )}
         </div>
-        <div className="absolute -top-4 right-0 px-4 py-2 bg-red-500 rounded-full text-sm font-bold flex items-center gap-2 shadow-lg">
+        {/* [BUG - LAYERS]: Changed positioning to absolute inset-0 making LIVE badge cover entire player. [FIX]: Change to absolute -top-4 right-0 */}
+        <div className="absolute inset-0 px-4 py-2 bg-red-500 rounded-full text-sm font-bold flex items-center gap-2 shadow-lg">
           <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
           LIVE
         </div>

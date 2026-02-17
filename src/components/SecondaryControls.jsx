@@ -2,7 +2,8 @@ import React from 'react';
 
 export default function SecondaryControls({ volume, onVolumeChange, playbackSpeed, onSpeedChange, quality, onQualityChange }) {
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-2 gap-4">
+      {/* [BUG - LAYOUT]: Changed grid-cols-3 to grid-cols-2, breaking the 3-column layout. [FIX]: Change back to grid-cols-3 */}
       {/* Volume */}
       <div className="bg-gray-950 rounded-xl p-4">
         <label className="text-xs font-bold text-gray-400 block mb-3">VOLUME</label>

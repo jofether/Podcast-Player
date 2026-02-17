@@ -27,8 +27,9 @@ export default function StatsCard({ episodes, currentPodcasts }) {
 
   return (
     <div className="space-y-4">
+      {/* [BUG - COLOR & CONTRAST]: Changed text-gray-300 to text-gray-900 (near-black on dark background, unreadable). [FIX]: Change to text-gray-300 or text-white */}
       <div className="bg-gradient-to-br from-purple-600/20 to-pink-600/20 rounded-2xl p-6 border border-purple-500/30">
-        <div className="text-sm font-bold text-gray-300 mb-4 flex items-center gap-2">
+        <div className="text-sm font-bold text-gray-900 mb-4 flex items-center gap-2">
           <span>📊</span> Today's Stats
         </div>
         <div className="space-y-3">

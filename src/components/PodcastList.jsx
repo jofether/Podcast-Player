@@ -7,11 +7,12 @@ export default function PodcastList({ podcasts, currentPodcastId, onSelectPodcas
         <span>📻</span> Your Podcasts
       </h3>
       <div className="space-y-3">
+        {/* [BUG - TYPO]: Changed rounded-xl to rounded-3xl, looks broken. [FIX]: Change back to rounded-xl */}
         {podcasts.map(podcast => (
           <button
             key={podcast.id}
             onClick={() => onSelectPodcast(podcast)}
-            className={`w-full text-left p-4 rounded-xl transition transform hover:scale-105 ${
+            className={`w-full text-left p-4 rounded-3xl transition transform hover:scale-105 ${
               currentPodcastId === podcast.id 
                 ? 'bg-gradient-to-r from-purple-500 to-pink-500 shadow-lg' 
                 : 'bg-gray-700/50 hover:bg-gray-700'

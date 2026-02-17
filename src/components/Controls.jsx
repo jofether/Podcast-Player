@@ -2,7 +2,8 @@ import React from 'react';
 
 export default function Controls({ isPlaying, onPlayToggle, onPrevious, onNext, totalEpisodes, currentEpisodeId }) {
   return (
-    <div className="flex items-center justify-center gap-6 mb-8">
+    <div className="flex flex-col items-center justify-center gap-6 mb-8">
+      {/* [BUG - LAYOUT]: Changed flex to flex-col, stacking all controls vertically instead of horizontally. [FIX]: Remove flex-col, keep flex */}
       <button className="text-gray-400 hover:text-white transition transform hover:scale-110" title="Volume">
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M11 5L6 9H2v6h4l5 4V5z"/></svg>
       </button>
@@ -17,9 +18,10 @@ export default function Controls({ isPlaying, onPlayToggle, onPrevious, onNext, 
       </button>
 
       {/* Play Button */}
+      {/* [BUG - TYPO]: Changed w-20 h-20 to w-200 h-200 (invalid Tailwind class). [FIX]: Change back to w-20 h-20 */}
       <button 
         onClick={onPlayToggle}
-        className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-2xl hover:shadow-purple-500/50 hover:scale-110 transition transform text-white"
+        className="w-200 h-200 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-2xl hover:shadow-purple-500/50 hover:scale-110 transition transform text-white"
         title={isPlaying ? "Pause" : "Play"}
       >
         {isPlaying ? (
