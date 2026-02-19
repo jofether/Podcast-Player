@@ -11,7 +11,6 @@ export default function EpisodeList({ episodes, currentEpisodeId, onSelectEpisod
 
   return (
     <div className="bg-gray-800/50 rounded-2xl p-6 border border-gray-700">
-      {/* [BUG - SPACING]: Changed from normal padding to excessive px-40 py-20, breaking layout. [FIX]: Change to normal padding px-4 py-2 */}
       <button 
         onClick={() => setShowPlaylist(!showPlaylist)}
         className="w-full font-bold mb-4 flex items-center justify-between hover:text-purple-400 transition px-40 py-20"

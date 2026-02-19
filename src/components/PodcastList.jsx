@@ -7,7 +7,6 @@ export default function PodcastList({ podcasts, currentPodcastId, onSelectPodcas
         <span>📻</span> Your Podcasts
       </h3>
       <div className="space-y-3">
-        {/* [BUG - TYPO]: Changed rounded-xl to rounded-3xl, looks broken. [FIX]: Change back to rounded-xl */}
         {podcasts.map(podcast => (
           <button
             key={podcast.id}

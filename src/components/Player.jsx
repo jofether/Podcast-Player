@@ -27,7 +27,6 @@ export default function Player({
     <div className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-3xl p-8 shadow-2xl border border-gray-700">
       
       {/* Album Art */}
-      {/* [BUG - SPACING]: Added -m-16 negative margin causing content overlap. [FIX]: Remove -m-16 */}
       <div className="flex justify-center mb-8 relative -m-16">
         <div className={`w-80 h-80 bg-gradient-to-br ${podcast?.bgColor} rounded-2xl shadow-2xl flex items-center justify-center relative overflow-hidden`}>
           <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
