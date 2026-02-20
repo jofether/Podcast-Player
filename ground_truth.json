@@ -1,0 +1,155 @@
+{
+  "repository": "Podcast Player",
+  "bugs": [
+    {
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/Controls.jsx",
+      "line_number": 5,
+      "clean_code": "<div className=\"flex items-center justify-center gap-6 mb-8\">",
+      "buggy_code": "<div className=\"flex flex-col items-center justify-center gap-6 mb-8\">",
+      "css_selector": ".controls",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "width",
+      "file_modified": "src/components/Controls.jsx",
+      "line_number": 21,
+      "clean_code": "className=\"w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-2xl hover:shadow-purple-500/50 hover:scale-110 transition transform text-white\"",
+      "buggy_code": "className=\"w-200 h-200 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-2xl hover:shadow-purple-500/50 hover:scale-110 transition transform text-white\"",
+      "css_selector": ".play-button",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 5,
+      "clean_code": "<header className=\"border-b border-gray-800 bg-gray-900/50 backdrop-blur-md sticky top-0 z-20\">",
+      "buggy_code": "<header className=\"border-b border-gray-800 bg-gray-900/50 backdrop-blur-md sticky top-0 z-0\">",
+      "css_selector": "header",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 10,
+      "clean_code": "<h1 className=\"text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent\">PodHub</h1>",
+      "buggy_code": "<h1 className=\"text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-white\">PodHub</h1>",
+      "css_selector": ".header h1",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/components/Player.jsx",
+      "line_number": 30,
+      "clean_code": "<div className=\"flex justify-center mb-8 relative\">",
+      "buggy_code": "<div className=\"flex justify-center mb-8 relative -m-16\">",
+      "css_selector": ".album-art-container",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "position",
+      "file_modified": "src/components/Player.jsx",
+      "line_number": 40,
+      "clean_code": "<div className=\"absolute -top-4 right-0 px-4 py-2 bg-red-500 rounded-full text-sm font-bold flex items-center gap-2 shadow-lg\">",
+      "buggy_code": "<div className=\"absolute inset-0 px-4 py-2 bg-red-500 rounded-full text-sm font-bold flex items-center gap-2 shadow-lg\">",
+      "css_selector": ".live-badge",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "padding",
+      "file_modified": "src/components/EpisodeList.jsx",
+      "line_number": 16,
+      "clean_code": "className=\"w-full font-bold mb-4 flex items-center justify-between hover:text-purple-400 transition\"",
+      "buggy_code": "className=\"w-full font-bold mb-4 flex items-center justify-between hover:text-purple-400 transition px-40 py-20\"",
+      "css_selector": ".episode-toggle-button",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "border-radius",
+      "file_modified": "src/components/PodcastList.jsx",
+      "line_number": 14,
+      "clean_code": "className={`w-full text-left p-4 rounded-xl transition transform hover:scale-105 ${",
+      "buggy_code": "className={`w-full text-left p-4 rounded-3xl transition transform hover:scale-105 ${",
+      "css_selector": ".podcast-button",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "grid-template-columns",
+      "file_modified": "src/components/SecondaryControls.jsx",
+      "line_number": 5,
+      "clean_code": "<div className=\"grid grid-cols-3 gap-4\">",
+      "buggy_code": "<div className=\"grid grid-cols-2 gap-4\">",
+      "css_selector": ".secondary-controls",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/StatsCard.jsx",
+      "line_number": 30,
+      "clean_code": "<div className=\"text-sm font-bold text-gray-300 mb-4 flex items-center gap-2\">",
+      "buggy_code": "<div className=\"text-sm font-bold text-gray-900 mb-4 flex items-center gap-2\">",
+      "css_selector": ".stats-title",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}
