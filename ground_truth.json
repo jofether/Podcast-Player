@@ -2,6 +2,7 @@
   "repository": "Podcast Player",
   "bugs": [
     {
+      "comment": "Bug #1 - flexbox",
       "bug_category": "Layout",
       "bug_type": "flexbox",
       "file_modified": "src/components/Controls.jsx",
@@ -10,13 +11,14 @@
       "buggy_code": "<div className=\"flex flex-col items-center justify-center gap-6 mb-8\">",
       "css_selector": ".controls",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 113,
+        "y": 678,
+        "width": 670,
+        "height": 240
       }
     },
     {
+      "comment": "Bug #2 - width",
       "bug_category": "Layout",
       "bug_type": "width",
       "file_modified": "src/components/Controls.jsx",
@@ -25,13 +27,14 @@
       "buggy_code": "className=\"w-200 h-200 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-2xl hover:shadow-purple-500/50 hover:scale-110 transition transform text-white\"",
       "css_selector": ".play-button",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 432,
+        "y": 782,
+        "width": 32,
+        "height": 32
       }
     },
     {
+      "comment": "Bug #3 - z-index",
       "bug_category": "Layers",
       "bug_type": "z-index",
       "file_modified": "src/components/Header.jsx",
@@ -42,11 +45,12 @@
       "bounding_box": {
         "x": 0,
         "y": 0,
-        "width": 0,
-        "height": 0
+        "width": 1280,
+        "height": 85
       }
     },
     {
+      "comment": "Bug #4 - text-color",
       "bug_category": "Color",
       "bug_type": "text-color",
       "file_modified": "src/components/Header.jsx",
@@ -55,13 +59,14 @@
       "buggy_code": "<h1 className=\"text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-white\">PodHub</h1>",
       "css_selector": ".header h1",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 133,
+        "y": 26,
+        "width": 91,
+        "height": 32
       }
     },
     {
+      "comment": "Bug #5 - margin",
       "bug_category": "Spacing",
       "bug_type": "margin",
       "file_modified": "src/components/Player.jsx",
@@ -70,13 +75,14 @@
       "buggy_code": "<div className=\"flex justify-center mb-8 relative -m-16\">",
       "css_selector": ".album-art-container",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 49,
+        "y": 102,
+        "width": 798,
+        "height": 320
       }
     },
     {
+      "comment": "Bug #6 - position",
       "bug_category": "Layers",
       "bug_type": "position",
       "file_modified": "src/components/Player.jsx",
@@ -85,13 +91,14 @@
       "buggy_code": "<div className=\"absolute inset-0 px-4 py-2 bg-red-500 rounded-full text-sm font-bold flex items-center gap-2 shadow-lg\">",
       "css_selector": ".live-badge",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 49,
+        "y": 102,
+        "width": 798,
+        "height": 320
       }
     },
     {
+      "comment": "Bug #7 - padding",
       "bug_category": "Spacing",
       "bug_type": "padding",
       "file_modified": "src/components/EpisodeList.jsx",
@@ -100,13 +107,14 @@
       "buggy_code": "className=\"w-full font-bold mb-4 flex items-center justify-between hover:text-purple-400 transition px-40 py-20\"",
       "css_selector": ".episode-toggle-button",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 873,
+        "y": 823,
+        "width": 320,
+        "height": 208
       }
     },
     {
+      "comment": "Bug #8 - border-radius",
       "bug_category": "Layout",
       "bug_type": "border-radius",
       "file_modified": "src/components/PodcastList.jsx",
@@ -115,13 +123,14 @@
       "buggy_code": "className={`w-full text-left p-4 rounded-3xl transition transform hover:scale-105 ${",
       "css_selector": ".podcast-button",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 80,
+        "y": 133,
+        "width": 736,
+        "height": 1075
       }
     },
     {
+      "comment": "Bug #9 - grid-template-columns",
       "bug_category": "Layout",
       "bug_type": "grid-template-columns",
       "file_modified": "src/components/SecondaryControls.jsx",
@@ -130,13 +139,14 @@
       "buggy_code": "<div className=\"grid grid-cols-2 gap-4\">",
       "css_selector": ".secondary-controls",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 113,
+        "y": 950,
+        "width": 670,
+        "height": 226
       }
     },
     {
+      "comment": "Bug #10 - text-color",
       "bug_category": "Color",
       "bug_type": "text-color",
       "file_modified": "src/components/StatsCard.jsx",
@@ -145,10 +155,10 @@
       "buggy_code": "<div className=\"text-sm font-bold text-gray-900 mb-4 flex items-center gap-2\">",
       "css_selector": ".stats-title",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 873,
+        "y": 1466,
+        "width": 302,
+        "height": 20
       }
     }
   ]
