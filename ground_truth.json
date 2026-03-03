@@ -9,7 +9,7 @@
       "line_number": 5,
       "clean_code": "<div className=\"flex items-center justify-center gap-6 mb-8\">",
       "buggy_code": "<div className=\"flex flex-col items-center justify-center gap-6 mb-8\">",
-      "css_selector": ".controls",
+      "css_selector": "div:has(button[title=\"Volume\"])",
       "bounding_box": {
         "x": 113,
         "y": 678,
@@ -25,12 +25,12 @@
       "line_number": 21,
       "clean_code": "className=\"w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-2xl hover:shadow-purple-500/50 hover:scale-110 transition transform text-white\"",
       "buggy_code": "className=\"w-200 h-200 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-2xl hover:shadow-purple-500/50 hover:scale-110 transition transform text-white\"",
-      "css_selector": ".play-button",
+      "css_selector": "button.rounded-full.bg-gradient-to-br",
       "bounding_box": {
-        "x": 432,
-        "y": 782,
-        "width": 32,
-        "height": 32
+        "x": 240,
+        "y": 500,
+        "width": 800,
+        "height": 600
       }
     },
     {
@@ -57,7 +57,7 @@
       "line_number": 10,
       "clean_code": "<h1 className=\"text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent\">PodHub</h1>",
       "buggy_code": "<h1 className=\"text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-white\">PodHub</h1>",
-      "css_selector": ".header h1",
+      "css_selector": "header h1",
       "bounding_box": {
         "x": 133,
         "y": 26,
@@ -73,12 +73,12 @@
       "line_number": 30,
       "clean_code": "<div className=\"flex justify-center mb-8 relative\">",
       "buggy_code": "<div className=\"flex justify-center mb-8 relative -m-16\">",
-      "css_selector": ".album-art-container",
+      "css_selector": "div:has(div.w-80.h-80.rounded-2xl.shadow-2xl)",
       "bounding_box": {
         "x": 49,
-        "y": 102,
+        "y": 80,
         "width": 798,
-        "height": 320
+        "height": 500
       }
     },
     {
@@ -89,11 +89,11 @@
       "line_number": 40,
       "clean_code": "<div className=\"absolute -top-4 right-0 px-4 py-2 bg-red-500 rounded-full text-sm font-bold flex items-center gap-2 shadow-lg\">",
       "buggy_code": "<div className=\"absolute inset-0 px-4 py-2 bg-red-500 rounded-full text-sm font-bold flex items-center gap-2 shadow-lg\">",
-      "css_selector": ".live-badge",
+      "css_selector": "div:has-text('LIVE')",
       "bounding_box": {
-        "x": 49,
-        "y": 102,
-        "width": 798,
+        "x": 480,
+        "y": 80,
+        "width": 320,
         "height": 320
       }
     },
@@ -105,11 +105,11 @@
       "line_number": 16,
       "clean_code": "className=\"w-full font-bold mb-4 flex items-center justify-between hover:text-purple-400 transition\"",
       "buggy_code": "className=\"w-full font-bold mb-4 flex items-center justify-between hover:text-purple-400 transition px-40 py-20\"",
-      "css_selector": ".episode-toggle-button",
+      "css_selector": "button:has-text('Episodes')",
       "bounding_box": {
         "x": 873,
         "y": 823,
-        "width": 320,
+        "width": 500,
         "height": 208
       }
     },
@@ -121,7 +121,7 @@
       "line_number": 14,
       "clean_code": "className={`w-full text-left p-4 rounded-xl transition transform hover:scale-105 ${",
       "buggy_code": "className={`w-full text-left p-4 rounded-3xl transition transform hover:scale-105 ${",
-      "css_selector": ".podcast-button",
+      "css_selector": "button.w-full.text-left.p-4",
       "bounding_box": {
         "x": 80,
         "y": 133,
@@ -137,7 +137,7 @@
       "line_number": 5,
       "clean_code": "<div className=\"grid grid-cols-3 gap-4\">",
       "buggy_code": "<div className=\"grid grid-cols-2 gap-4\">",
-      "css_selector": ".secondary-controls",
+      "css_selector": "div:has(label:has-text(\"VOLUME\"))",
       "bounding_box": {
         "x": 113,
         "y": 950,
@@ -153,10 +153,10 @@
       "line_number": 30,
       "clean_code": "<div className=\"text-sm font-bold text-gray-300 mb-4 flex items-center gap-2\">",
       "buggy_code": "<div className=\"text-sm font-bold text-gray-900 mb-4 flex items-center gap-2\">",
-      "css_selector": ".stats-title",
+      "css_selector": "div:has-text('Today\\'s Stats')",
       "bounding_box": {
         "x": 873,
-        "y": 1466,
+        "y": 1100,
         "width": 302,
         "height": 20
       }
